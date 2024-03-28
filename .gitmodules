@@ -1,0 +1,3 @@
+[submodule "themes/leeming.dev"]
+	path = themes/leeming.dev
+	url = git@github.com:moddedTechnic/leeming.dev-theme.git
