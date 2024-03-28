@@ -1,3 +1,6 @@
 [submodule "themes/leeming.dev"]
 	path = themes/leeming.dev
 	url = git@github.com:moddedTechnic/leeming.dev-theme.git
+[submodule "themes/poison"]
+	path = themes/poison
+	url = git@github.com:lukeorth/poison.git
