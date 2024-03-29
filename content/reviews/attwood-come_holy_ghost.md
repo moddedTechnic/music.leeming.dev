@@ -2,7 +2,7 @@
 title: 'Come, Holy Ghost'
 composer: 'Thomas Attwood'
 link: 'https://open.spotify.com/track/1bvegt1nDZf16ZppRazfm6'
-published: 2024-03-28
+published: 2024-03-29
 ---
 
 On the whole, a perfectly pleasant piece. It opens with a clear soprano solo, which could be ideal for a treble also, before progressing to full choir and finally adding the organ once again, in very a predictable fashion. Whilst simple, interest is nonetheless developed in the harmony throughout the piece. However, the organ interludes start in a somewhat clunky manner, with a falling tritone appearing out of the blue, though it quickly returns to the safety of predictability.
