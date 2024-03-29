@@ -102,6 +102,6 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     # publisher_icon = ""                 # path to publisher icon - defaults to favicon, used in schema
 
 [taxonomies]
-    series = 'series'
+    series = 'composer'
     tags = 'tags'
 
