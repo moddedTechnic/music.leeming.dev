@@ -1,0 +1,13 @@
+.container.content {
+    max-width: unset;
+    flex-grow: 999;
+}
+
+.pretext {
+    max-width: 65ch;
+    margin-bottom: 4em;
+}
+
+.post {
+    max-width: 65ch;
+}
