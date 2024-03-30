@@ -16,7 +16,8 @@ title = "Jonathan Leeming - Music"
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
-    front_page_content = ["reviews"] # Equivalent to the default value, add page bundle names to include them on the front page.
+    front_page_content = ["reviews"]
+    hideToc = true
 
     # MENU PLACEHOLDER
     # Menu dict keys:
@@ -25,8 +26,8 @@ title = "Jonathan Leeming - Music"
         # HasChildren:  If the directory's files should be listed.  Default is true.
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
-        # {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Reviews", URL = "/reviews/", Pre = "Recent", HasChildren = true, Limit = 5},
+        {Name = "Reviews", URL = "/reviews/"},
+        {Name = "Composer", URL = "/composer/", HasChildren = true},
     ]
 
     # Links to your socials.  Comment or delete any you don't need/use. 
