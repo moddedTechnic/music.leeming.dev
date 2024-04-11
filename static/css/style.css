@@ -11,3 +11,7 @@
 .post {
     max-width: 65ch;
 }
+
+.entries[data-dots="false"] li::after {
+    background-image: unset;
+}

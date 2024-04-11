@@ -1,0 +1,33 @@
+{{ define "main" -}}
+    <link href="/css/style.css" rel="stylesheet">
+    <h1 class="title">{{ .Title }}</h1>
+    <ul id="entries" class="entries" data-dots="false">
+    </ul>
+
+    <script>
+        function makeEntry({name, link}) {
+            const li = document.createElement('li')
+            const span = document.createElement('span')
+            span.classList.add('title')
+            const anchor = document.createElement('a')
+            anchor.href = link
+            anchor.innerText = name
+            span.appendChild(anchor)
+            li.appendChild(span)
+            return li
+        }
+
+        const parent = document.getElementById('entries');
+        [
+            {{ range .Pages }}
+                {{ $parts := split .Title " " }}
+                {{ $surname := delimit (last 1 $parts) "" }}
+                {{ $forenames := delimit (collections.Reverse (after 1 (collections.Reverse $parts))) " " }}
+                { name: "{{ $surname }}, {{ $forenames }}", link: "{{ .RelPermalink }}"},
+            {{ end }}
+        ]
+            .sort((a, b) => a.name < b.name ? -1 : 1)
+            .map(makeEntry)
+            .forEach(node => parent.appendChild(node))
+    </script>
+{{ end }}
