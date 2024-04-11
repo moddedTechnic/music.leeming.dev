@@ -9,7 +9,7 @@
         {{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
         {{ range (.Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes)).Pages }}
             <article class="post">
-                {{ partial "post/info.html" . }}
+                {{ partial "review/info.html" . }}
                 {{ if or (.Site.Params.noSummary) (.Params.noSummary) }}
                     {{ .Content }}
                 {{ else }}

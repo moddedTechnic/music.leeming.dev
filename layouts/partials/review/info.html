@@ -14,14 +14,16 @@
                 </time>
                 <span> | </span>
             {{ end }}
+            {{ $readingTime := div (float .WordCount) .Site.Params.reading_speed }}
+            {{ $readingTime = math.Ceil $readingTime }}
             <span class="reading-time">
-                {{ if gt .ReadingTime 1 }}
+                {{ if gt $readingTime 1 }}
                     {{ .Scratch.Set "readingTime" "mins" }}
                 {{ else }}
                     {{ .Scratch.Set "readingTime" "min" }}
                 {{ end }}
 
-                <span>{{ .ReadingTime }} {{ .Scratch.Get "readingTime" }} read</span>
+                <span>{{ $readingTime }} {{ .Scratch.Get "readingTime" }} read</span>
             </span>
             {{ if .Params.Link }}
                 <span> | </span>

@@ -16,6 +16,8 @@ title = "Jonathan Leeming - Music"
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
+    reading_speed = 140
+
     front_page_content = ["reviews"]
     hideToc = true
 
