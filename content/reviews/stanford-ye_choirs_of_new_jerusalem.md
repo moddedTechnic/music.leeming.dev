@@ -2,7 +2,7 @@
 title: 'Ye Choirs of New Jerusalem'
 composer: 'Charles Villers Stanford'
 link: 'https://open.spotify.com/track/3mFtf9S5MY4l7zJRgJrhU7'
-published: 2024-04-12
+published: 2024-04-13
 ---
 
 With it's distinctive opening, this piece is a familiar staple of Easter.
